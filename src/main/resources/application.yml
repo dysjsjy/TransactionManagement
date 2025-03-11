@@ -21,12 +21,12 @@ spring:
     url: jdbc:mysql://localhost:3306/dyTM
     username: root
     password: root
-  # Redis 配置
-  # todo 需替换配置，然后取消注释
-  #  redis:
-  #    database: 1
-  #    host: localhost
-  #    port: 6379
+    # Redis 配置
+    # todo 需替换配置，然后取消注释
+    redis:
+      database: 1
+      host: localhost
+      port: 6379
   #    timeout: 5000
   #    password: 123456
   #  redission 限流配置
@@ -44,6 +44,10 @@ server:
     session:
       cookie:
         max-age: 2592000
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: false
