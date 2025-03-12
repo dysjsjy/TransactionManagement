@@ -1,9 +1,8 @@
 package com.dysjsjy.TransactionManagement.service;
 
-import com.dysjsjy.TransactionManagement.model.dto.ClassAddRequest;
+import com.dysjsjy.TransactionManagement.model.dto.ClassRequest;
 import com.dysjsjy.TransactionManagement.model.entity.Classes;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 
 /**
 * @author dysjs
@@ -12,5 +11,9 @@ import com.sun.org.apache.xpath.internal.operations.Bool;
 */
 public interface ClassesService extends IService<Classes> {
 
-    long addClass(ClassAddRequest classAddRequest);
+    long addClass(ClassRequest classRequest);
+
+    boolean updateClass(ClassRequest classRequest);
+
+    long addClass2(ClassRequest classRequest);
 }
